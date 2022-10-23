@@ -21,7 +21,7 @@ public class DatabaseAccess extends HttpServlet {
         PrintWriter writer = resp.getWriter();
         final String URL = "jdbc:mysql://localhost:3306/test_db1";
         final String USERNAME = "root";
-        final String PASSWORD = "Stalker261986";
+        final String PASSWORD = "";
         final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
         final String SELECT_ALL_USERS1_QUERY = "select * from users1";
         final String SELECT_ALL_COUNTER_QUERY = "select * from counter";
