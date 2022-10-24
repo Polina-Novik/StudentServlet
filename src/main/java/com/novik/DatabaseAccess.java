@@ -13,18 +13,18 @@ import java.sql.*;
 
 
 public class DatabaseAccess extends HttpServlet {
-
+    private static final String URL = "jdbc:mysql://localhost:3306/test_db1";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "";
+    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static final String SELECT_ALL_USERS1_QUERY = "select * from users1";
+    private static final String SELECT_ALL_COUNTER_QUERY = "select * from counter";
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter writer = resp.getWriter();
-        final String URL = "jdbc:mysql://localhost:3306/test_db1";
-        final String USERNAME = "root";
-        final String PASSWORD = "";
-        final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-        final String SELECT_ALL_USERS1_QUERY = "select * from users1";
-        final String SELECT_ALL_COUNTER_QUERY = "select * from counter";
+
         try {
             Class.forName(JDBC_DRIVER);
         } catch (ClassNotFoundException e) {
