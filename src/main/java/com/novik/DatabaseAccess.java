@@ -15,10 +15,11 @@ import java.sql.*;
 public class DatabaseAccess extends HttpServlet {
     private static final String URL = "jdbc:mysql://localhost:3306/test_db1";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "Stalker261986";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String SELECT_ALL_USERS1_QUERY = "select * from users1";
     private static final String SELECT_ALL_COUNTER_QUERY = "select * from counter";
+    private static final String command="update counter set count=count+1 where id=1";
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
@@ -34,16 +35,16 @@ public class DatabaseAccess extends HttpServlet {
         try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             Statement statement = connection.createStatement();
-            statement.execute("update counter set count=count+1 where id=1");
+            statement.execute(command);
             ResultSet resultSet = statement.executeQuery(SELECT_ALL_USERS1_QUERY);
             while (resultSet.next()) {
                 writer.println("<h1> " + resultSet.getInt("id") + ", name: "
                         + resultSet.getString("name") + ", course: "
                         + resultSet.getInt("course") + "</h1>");
             }
-            ResultSet resultSet1 = statement.executeQuery(SELECT_ALL_COUNTER_QUERY);
-            while (resultSet1.next()) {
-                writer.println("<h1> This page was visited " + resultSet1.getInt("count") + " times</h1>");
+            resultSet = statement.executeQuery(SELECT_ALL_COUNTER_QUERY);
+            while (resultSet.next()) {
+                writer.println("<h1> This page was visited " + resultSet.getInt("count") + " times</h1>");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);

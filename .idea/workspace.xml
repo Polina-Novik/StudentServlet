@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fab6778e-7722-4eca-bd83-b15edfd24ab2" name="Changes" comment="Added Student Servlet">
+    <list default="true" id="fab6778e-7722-4eca-bd83-b15edfd24ab2" name="Changes" comment="Edited Student Servlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/novik/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/novik/DatabaseAccess.java" afterDir="false" />
     </list>
@@ -177,7 +177,8 @@
       <workItem from="1666545962085" duration="2164000" />
       <workItem from="1666549138888" duration="177000" />
       <workItem from="1666549353414" duration="844000" />
-      <workItem from="1666617328777" duration="344000" />
+      <workItem from="1666617328777" duration="1826000" />
+      <workItem from="1666954798197" duration="482000" />
     </task>
     <task id="LOCAL-00001" summary="Added Student Servlet">
       <created>1666549941874</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666550066604</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Edited Student Servlet">
+      <created>1666617928883</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666617928883</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +220,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Student Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Student Servlet" />
+    <MESSAGE value="Edited Student Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited Student Servlet" />
   </component>
 </project>
