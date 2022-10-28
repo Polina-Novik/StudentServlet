@@ -15,7 +15,7 @@ import java.sql.*;
 public class DatabaseAccess extends HttpServlet {
     private static final String URL = "jdbc:mysql://localhost:3306/test_db1";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Stalker261986";
+    private static final String PASSWORD = "";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String SELECT_ALL_USERS1_QUERY = "select * from users1";
     private static final String SELECT_ALL_COUNTER_QUERY = "select * from counter";
